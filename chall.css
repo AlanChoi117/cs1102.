@@ -1,0 +1,122 @@
+body {
+    background-image: url("banks.jpg");
+}
+
+#buttom_container1{
+display: flex;
+justify-content: right;
+gap: 10px;  
+}
+
+#buttom_container1 button{
+border-radius: 10px;
+height: 30px; 
+width: 100px;
+color: aliceblue;
+background-color: grey;
+}
+
+#buttom_container1 button:hover{
+background-color: #333;
+}
+
+#buttom_container2{
+display: flex;
+justify-content: center;
+gap: 50px;  
+list-style: none;
+padding: 0;
+}
+
+#buttom_container2 button{
+border-radius: 10px;
+height: 30px; 
+width: 100px;
+color: aliceblue;
+background-color: grey;
+cursor: pointer;
+transition: transform 0.2s;
+}
+
+#buttom_container2 button:hover{
+transform: scale(1.1);
+background-color: #333;
+}
+
+
+header{
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px;
+}
+
+
+#horizontal_line{
+border-top: 2px solid black;
+}
+
+h2{
+font-family: Arial, sans-serif;
+font-weight: bold;
+text-decoration: underline;
+text-align: center;
+}
+
+#content{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+padding-left: 20%;
+padding-right: 20%;
+
+}
+
+img {
+display: block;
+margin: 0 auto;
+border-radius: 40%;
+}
+
+span{ 
+font-weight: bolder;
+color: rgba(8, 8, 98, 0.944);
+}
+
+footer{
+background-color: #333;
+text-align: left; 
+padding-bottom: 5px;
+
+}
+
+h4{
+color: black;
+padding-top: 10px;
+padding-left: 5px;
+text-decoration: underline;
+}
+
+h5{
+color: white;
+padding-top: 10px;
+padding-left: 5px;
+text-decoration: underline;
+}
+h6{
+color: white;
+padding-top: 10px;
+padding-left: 5px;
+text-decoration: underline;
+}
+
+#footer_container{
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+padding-left: 15px;
+
+}
+
+a{ 
+color: rgba(43, 79, 176, 0.944);
+text-decoration: none;
+}

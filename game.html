@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaBank VR Adventure</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+</head>
+<body>
+    <div id="home_button">
+        <a href="./index.html"><img src="./home-removebg-preview.png"></a>
+    </div>
+
+
+
+    <div id="content_container">
+        <h1>CS1102 - Course Project - 2024/2025 Semester B </h1>      	 
+        <h1>Ngan Chiu Chun: 59288359</h1>
+        <h1>Choi Tsz Fan: 59286643</h1>
+        <h1>Choi Sin Hei: 58709230</h1>
+        <h1>Welcome to MetaBank Adventure</h1>
+        <p>Image you are now entering a Virtual World,</p>
+        <p> Let's us explore the future banking and experience the financai services brought by VR and Metaverse</p>
+
+        
+        <div id="lobby">
+            <button onclick="showSection('account-section')">Sign up</button>
+            <button onclick="showSection('nft-section')">NFT Exchange Market</button>
+            <button onclick="showSection('education-section')">Finacial Education Center</button>
+        </div>
+
+          
+          <div id="account-section" class="section hidden">
+            <h2>Sign up</h2>
+            <p>Please enter the following information to create your own virtual account:</p>
+            <input type="text" id="username" placeholder="Please enter your user name">
+            <button onclick="create_account()">Create account</button>
+            <p id="account_message"></p>
+        </div>
+
+       
+   
+        <div id="nft-section" class="section hidden">
+            <h2>NFT Exchange Market</h2>
+            <p>You can use virtual coins to purchase NFT assets as collections ! </p>
+            <p>Current Balance:<span id="balance">100</span> Virtual coins</p>
+
+            <div id="nft">
+                <img src="./NFT1.jpg" alt="NFT Artwork">
+                <p>Very Poor Monkey - 100 Virtual Coins</p>
+                <button onclick="purchase_NFT(100, 'Very Poor Monkey')">Purchase</button>
+            </div>
+
+            <div id="nft">
+                <img src="./NFT2.avif" alt="NFT Artwork">
+                <p>Sleepy Monkey - 300 Virtual Coins</p>
+                <button onclick="purchase_NFT(300, 'Sleepy Monkey')">Purchase</button>
+            </div>
+
+            <div id="nft">
+                <img src="./NFT3.avif" alt="NFT Artwork">
+                <p>Chill Monkey - 500 Virtual Coins</p>
+                <button onclick="purchase_NFT(500, 'Chill Monkey')">Purchase</button>
+            </div>
+
+            <div id="nft">
+                <img src="./NFT4.jpg" alt="NFT Artwork">
+                <p>Hard-working Monkey - 800 Virtual Coins</p>
+                <button onclick="purchase_NFT(800, 'Hard-working Monkey')">Purchase</button>
+            </div>
+
+            <div id="nft">
+                <img src="./NFT5.jpg" alt="NFT Artwork">
+                <p>Smoking Monkey - 1000 Virtual Coins</p>
+                <button onclick="purchase_NFT(1000, 'Smoking Monkey')">Purchase</button>
+            </div>
+
+            <div id="nft">
+                <img src="./NFT6.webp" alt="NFT Artwork">
+                <p>Pizze-lover Monkey - 2000 Virtual Coins</p>
+                <button onclick="purchase_NFT(2000, 'Pizze-lover Monkey')">Purchase</button>
+            </div>
+
+            <div id="nft">
+                <img src="./NFT7.jpg" alt="NFT Artwork">
+                <p>Hamburage-lover Monkey - 3000 Virtual Coins</p>
+                <button onclick="purchase_NFT(3000, 'Hamburage-lover Monkey')">Purchase</button>
+            </div>
+
+            <div id="nft">
+                <img src="./NFT8.jpg" alt="NFT Artwork">
+                <p>Rich Monkey - 5000 Virtual Coins</p>
+                <button onclick="purchase_NFT(5000, 'Rich Monkey')">Purchase</button>
+            </div>
+
+            <div id="nft">
+                <img src="./NFT9.jpeg" alt="NFT Artwork">
+                <p>Very Rich Monkey - 8000 Virtual Coins</p>
+                <button onclick="purchase_NFT(8000, 'Very Rich Monkey')">Purchase</button>
+            </div>
+
+            <div id="nft">
+                <img src="./NFT10.avif" alt="NFT Artwork">
+                <p>Monkey King - 10000 Virtual Coins</p>
+                <button onclick="purchase_NFT(10000, 'Monkey King')">Purchase</button>
+            </div>
+        </div>
+
+       
+        <div id="education-section" class="section hidden">
+            <h2>Financial Education Center</h2>
+            <p>Answer correct question to earn virtual coins!</p>
+            <p>Current Balance:<span id="education_balance">100</span> Virtual coins</p>
+
+            <p>Question 1: What is Metaverse?</p>
+            <button onclick="answerQuestion('Right', 100)">A. A virtual worlds which users can be represented by avatars in a three-dimensional (3D) environment</button>
+            <button onclick="answerQuestion('Wrong', 0)">B. The usage of computer-generated simulation</button>
+
+            <p>Question 2: What is Virtual Reality (VR) ?</p>
+            <button onclick="answerQuestion('Wrong', 0)">A. A virtual worlds which users can be represented by avatars in a three-dimensional (3D) environment</button>
+            <button onclick="answerQuestion('Right', 100)">B. The usage of computer-generated simulation</button>
+
+            <p>Question 3: Which Web Evolution does Metaverse belong to ?</p>
+            <button onclick="answerQuestion('Wrong', 0)">A. Web 1.0</button>
+            <button onclick="answerQuestion('Wrong', 0)">B. Web 2.0</button>
+            <button onclick="answerQuestion('Right', 100)">C. Web 3.0</button>
+
+            <p>Question 4: What are the benefits of using Virtual Reality and Metaverse in banking ?</p>
+            <button onclick="answerQuestion('Wrong', 0)">A. Enhanced customer experience</button>
+            <button onclick="answerQuestion('Wrong', 0)">B. Customised products and services</button>
+            <button onclick="answerQuestion('Wrong', 0)">C. Easier financial training</button>
+            <button onclick="answerQuestion('Wrong', 0)">D. Improved brand image</button>
+            <button onclick="answerQuestion('Wrong', 0)">E. Only A, B, C correct</button>
+            <button onclick="answerQuestion('Right', 100)">F. All of them are correct</button>
+
+
+            <p>Question 5: What are the challenges of using Virtual Reality and Metaverse in banking ?</p>
+            <button onclick="answerQuestion('Wrong', 0)">A. Security problem</button>
+            <button onclick="answerQuestion('Wrong', 0)">B. Lack of regulations</button>
+            <button onclick="answerQuestion('Right', 100)">C. Both are correct</button>
+
+            <p>Question 6: Which of the following aims to protect data protection between the characteristics in Metaverses?</p>
+            <button onclick="answerQuestion('Right', 100)">A. The General Data Protection Regulation</button>
+            <button onclick="answerQuestion('Wrong', 0)">B. Hong Kong Cyberport Management Company Limited</button>
+            <button onclick="answerQuestion('Wrong', 0)">C. Hong Kong government</button>
+            <button onclick="answerQuestion('Wrong', 0)">D. Data Security Law of the People's Republic of China</button>
+
+
+            <p>Question 7: Which of the following are digital currencies?</p>
+            <button onclick="answerQuestion('Wrong', 0)">A. Octopus Card</button>
+            <button onclick="answerQuestion('Wrong', 0)">B. Alipay</button>
+            <button onclick="answerQuestion('Right', 100)">C. Bitcoin</button>
+            <button onclick="answerQuestion('Wrong', 0)">D. All of them are correct</button>
+
+            <p>Question 8: What is Bank 4.0 ?</p>
+            <button onclick="answerQuestion('Right', 100)">A. The integration of Virtual Reality and Metaverse in future banking</button>
+            <button onclick="answerQuestion('Wrong', 0)">B. The combination of artificial intelligence and traditional banking</button>
+
+
+        </div>
+
+        
+        <div id="chat_bot">
+            <p>AI chatbot : Hi ! I am your virtual assistance, what can I help you ?</p>
+            <button onclick="chatbot_respond()">Need help</button>
+        </div>
+    </div>
+
+</body>
+</html>

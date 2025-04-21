@@ -1,0 +1,125 @@
+#buttom_container1{
+    display: flex;
+    justify-content: right;
+    gap: 10px;  
+}
+
+#buttom_container1 button{
+    border-radius: 10px;
+    height: 30px; 
+    width: 100px;
+    color: aliceblue;
+    background-color: grey;
+}
+
+#buttom_container1 button:hover{
+    background-color: #333;
+}
+
+#buttom_container2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;  
+    list-style: none;
+    padding: 0;
+}
+
+#buttom_container2 button{
+    border-radius: 10px;
+    height: 30px; 
+    width: 100px;
+    color: aliceblue;
+    background-color: grey;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#buttom_container2 button:hover{
+    transform: scale(1.1);
+    background-color: #333;
+}
+
+
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#horizontal_line{
+    border-top: 2px solid black;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+#content1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: center ;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    
+}
+
+span{ 
+    font-weight: bolder;
+    color: rgba(8, 8, 98, 0.944);
+}
+
+footer{
+    background-color: #333;
+    text-align: left; 
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+h3{
+    text-align: center;
+}
+
+#start{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+#start button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    border-radius: 10px;
+    height: 50px; 
+    width: 180px;
+    color: aliceblue;
+    background-color: grey;
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+}
+
+#start button:hover{
+    transform: scale(1.2);
+    background-color: #333;
+}
+
+#CS{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-style: italic;
+}
